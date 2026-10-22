@@ -27,7 +27,7 @@
   var mozna = IO && !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
   if (mozna) {
     document.documentElement.classList.add('js');
-    var cele = $$('.sek-head, .typ-k, .jacht, .opinia, .lista li, .kroki li, .zasady > div, .faq, .spec, .wyp > div, .tab-ram, .mapa, .foto-opis, .kal, .wycena, .kdane, .stopka-kol, .tabela');
+    var cele = $$('.sek-head, .typ-k, .jacht, .opinia, .lista li, .kroki li, .zasady > div, .faq, .spec, .wyp > div, .tab-ram, .mapa, .foto-opis, .kal, .wycena, .kdane, .stopka-kol, .tabela, .port-k, .poradniki > div');
     var obs = new IntersectionObserver(function (e) {
       e.forEach(function (x) { if (x.isIntersecting) { x.target.classList.add('in'); obs.unobserve(x.target); } });
     }, { rootMargin: '0px 0px -6% 0px' });

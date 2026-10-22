@@ -462,3 +462,26 @@ p{margin:0 0 1em}
   .typ-k{aspect-ratio:16/8}
 }
 .js .rv{opacity:.5}
+
+/* porty startowe */
+.porty{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.port-k{position:relative;display:block;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;color:#fff;text-decoration:none;background:var(--navy)}
+.port-k img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.port-k:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(11,32,53,.9),rgba(11,32,53,.1) 62%)}
+.port-k span{position:absolute;left:12px;right:12px;bottom:10px;z-index:1}
+.port-k b{display:block;font-size:1.08rem;line-height:1.2}
+.port-k small{display:block;font-size:.8rem;color:#dbe5ee;line-height:1.35;margin-top:2px}
+.port-k:active{transform:scale(.985)}
+@media (hover:hover){.port-k:hover img{transform:scale(1.06)}}
+.porty-wiecej{margin:16px 0 0;font-size:.93rem;color:var(--mut)}
+@media (min-width:900px){.porty{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.port-k{aspect-ratio:16/10}.port-k span{left:18px;bottom:16px}.port-k b{font-size:1.25rem}.port-k small{font-size:.9rem}}
+/* poradniki */
+.poradniki{display:grid;grid-template-columns:minmax(0,1fr);gap:8px 48px}
+.poradniki h3{font-size:1rem;margin:0 0 6px}
+.poradniki ul{list-style:none;margin:0 0 14px;padding:0;border-top:1px solid var(--line)}
+.poradniki li{border-bottom:1px solid var(--line)}
+.poradniki a{display:flex;justify-content:space-between;gap:12px;padding:11px 2px;color:var(--ink);text-decoration:none;font-weight:600;line-height:1.4}
+.poradniki a:after{content:"";flex:0 0 auto;width:8px;height:8px;margin:7px 4px 0 0;border-top:2px solid var(--red);border-right:2px solid var(--red);transform:rotate(45deg);transition:transform .2s ease}
+@media (hover:hover){.poradniki a:hover{color:var(--blue)}.poradniki a:hover:after{transform:translateX(3px) rotate(45deg)}}
+@media (min-width:900px){.poradniki{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:599px){.port-k{aspect-ratio:1/1}}
