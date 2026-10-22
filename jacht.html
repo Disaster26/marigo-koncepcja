@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Stillo 30 - czarter jachtu motorowego bez patentu, Sztynort - Marigo (wizualizacja)</title>
+<meta name="description" content="Wzorcowa podstrona jachtu: Stillo 30, jacht motorowy bez patentu w porcie Sztynort. Galeria, parametry, kalendarz rezerwacji i kalkulator kosztu.">
+<link rel="preload" as="image" href="img/stillo-1.webp">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Szablon podstrony jachtu (wzor: Stillo 30). Dane, ceny i zdjecia z marigo.pl/stillo-30 i marigo.pl/cennik (stan 22.10.2026).
+     Ramka #kalendarz to miejsce na gotowy kod widgetu kalendarza rezerwacji - na obecnej stronie:
+     <div data-yacht-widget="calendar" data-yacht-ids="1656" ...> + skrypt widget.yachtcms.eu/sdk/yacht-sdk.js -->
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Marigo Czarter - strona główna"><img src="img/logo-marigo.png" alt="Marigo czarter" width="421" height="150"></a>
+    <nav class="nav" aria-label="Menu główne">
+      <a href="index.html#flota">Jachty żaglowe</a>
+      <a href="index.html#flota" class="akt">Jachty motorowe</a>
+      <a href="index.html#flota">Bez patentu</a>
+      <a href="index.html#ceny">Cennik</a>
+      <a href="https://marigo.pl/blog/" target="_blank" rel="noopener">Porady</a>
+      <a href="index.html#o-nas">O nas</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="top-tel" href="tel:+48691612066" aria-label="Zadzwoń: 691 612 066"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>691 612 066</span></a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="panel" aria-label="Otwórz menu"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  <div class="panel" id="panel">
+    <a href="index.html#flota">Wszystkie jachty</a>
+    <a href="#kalendarz">Wolne terminy Stillo 30</a>
+    <a href="#koszt">Koszt rejsu</a>
+    <a href="#wyposazenie">Wyposażenie i dane</a>
+    <a href="index.html#ceny">Cennik i zasady</a>
+    <a href="#kontakt">Kontakt</a>
+  </div>
+</header>
+
+<main>
+  <section class="jhero">
+    <div class="galeria" id="galeria">
+      <img class="glowne" id="glowne" src="img/stillo-1.webp" alt="Stillo 30 Marigo na jeziorze" width="1400" height="680" fetchpriority="high">
+      <button class="strz l" type="button" data-kier="-1" aria-label="Poprzednie zdjęcie"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button class="strz p" type="button" data-kier="1" aria-label="Następne zdjęcie"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+      <span class="licz" id="licz">1 / 8</span>
+      <div class="miniatury" id="miniatury">
+        <button type="button" aria-current="true" data-src="img/stillo-1.webp" data-alt="Stillo 30 Marigo na jeziorze"><img src="img/stillo-1-t.webp" alt="" loading="lazy"></button>
+        <button type="button" data-src="img/stillo-2.webp" data-alt="Rufa Stillo 30 z platformą kąpielową"><img src="img/stillo-2-t.webp" alt="" loading="lazy"></button>
+        <button type="button" data-src="img/stillo-3.webp" data-alt="Sterówka Stillo 30"><img src="img/stillo-3-t.webp" alt="" loading="lazy"></button>
+        <button type="button" data-src="img/stillo-4.webp" data-alt="Część dzienna przy sterówce"><img src="img/stillo-4-t.webp" alt="" loading="lazy"></button>
+        <button type="button" data-src="img/stillo-5.webp" data-alt="Mesa Stillo 30"><img src="img/stillo-5-t.webp" alt="" loading="lazy"></button>
+        <button type="button" data-src="img/stillo-6.webp" data-alt="Kambuz Stillo 30"><img src="img/stillo-6-t.webp" alt="" loading="lazy"></button>
+        <button type="button" data-src="img/stillo-7.webp" data-alt="Kabina rufowa Stillo 30"><img src="img/stillo-7-t.webp" alt="" loading="lazy"></button>
+        <button type="button" data-src="img/stillo-8.webp" data-alt="Mesa i zejście do kabin"><img src="img/stillo-8-t.webp" alt="" loading="lazy"></button>
+      </div>
+    </div>
+    <div class="jpanel">
+      <div class="wrap">
+        <p class="okruchy"><a href="index.html">Strona główna</a> / <a href="index.html#flota">Jachty motorowe</a> / Stillo 30</p>
+        <h1>Stillo 30</h1>
+        <p class="pod">Jacht motorowy bez patentu, port Sztynort. W Marigo pływają 2 jednostki Stillo 30.</p>
+        <ul class="fakty">
+          <li>6+2 osób</li>
+          <li>3 zamykane kabiny</li>
+          <li>9,10 m</li>
+          <li>diesel 38 KM</li>
+        </ul>
+        <p class="jcena">od <b>650 zł</b> / doba<small>kaucja zwrotna 3000 zł · sprzątanie i dezynfekcja 300 zł</small></p>
+        <a class="btn btn-red" href="#kalendarz" id="cta-terminy">Sprawdź wolne terminy</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sek" id="kalendarz">
+    <div class="wrap">
+      <div class="sek-head">
+        <h2>Wolne terminy i rezerwacja online</h2>
+        <p>Wybierz termin w kalendarzu albo zarezerwuj telefonicznie: <a href="tel:+48691612066">691 612 066</a>, mailowo: <a href="mailto:biuro@marigo.pl">biuro@marigo.pl</a>.</p>
+      </div>
+      <!-- ZASLEPKA: tu wkleic gotowy kod widgetu kalendarza rezerwacji dla tego jachtu -->
+      <div class="widget jasny duzy" role="note">
+        <strong>Miejsce na widget kalendarza rezerwacji</strong>
+        <p>Tu wklejany gotowy kod kalendarza dla tego jachtu (obecnie Yacht CMS, <code>data-yacht-ids="1656"</code>). Pole ma pełną szerokość, więc kalendarz zmieści się na telefonie i na komputerze.</p>
+      </div>
+      <p class="uwaga">Rezerwacja przez system online Yacht CMS jest jednoznaczna z zawarciem umowy czarterowej dostępnej w panelu użytkownika i akceptacją <a href="https://marigo.pl/regulamin-rezerwacji-online/" target="_blank" rel="noopener">Regulaminu rezerwacji online</a> oraz polityki zwrotów Marigo Czarter.</p>
+    </div>
+  </section>
+
+  <section class="sek sand" id="koszt">
+    <div class="wrap">
+      <div class="sek-head">
+        <h2>Ile kosztuje rejs Stillo 30</h2>
+        <p>Policz orientacyjny koszt z cennika. Wiążąca jest cena w umowie czarterowej.</p>
+      </div>
+      <div class="kal-grid">
+        <form class="form" id="kalk" onsubmit="return false">
+          <div class="pole">
+            <label for="k-termin">Termin rejsu</label>
+            <select id="k-termin">
+              <option value="650" data-sezon="0">15.04 - 29.04 · 650 zł / doba</option>
+              <option value="700" data-sezon="0">29.04 - 03.05 · 700 zł / doba</option>
+              <option value="700" data-sezon="0">03.05 - 20.05 · 700 zł / doba</option>
+              <option value="750" data-sezon="0">20.05 - 26.05 · 750 zł / doba</option>
+              <option value="950" data-sezon="0">26.05 - 30.05 · 950 zł / doba</option>
+              <option value="800" data-sezon="0" selected>30.05 - 20.06 · 800 zł / doba</option>
+              <option value="850" data-sezon="1">20.06 - 27.06 · 850 zł / doba</option>
+              <option value="900" data-sezon="1">27.06 - 11.07 · 900 zł / doba</option>
+              <option value="800" data-sezon="1">11.07 - 15.08 · 800 zł / doba</option>
+              <option value="700" data-sezon="1">15.08 - 22.08 · 700 zł / doba</option>
+              <option value="650" data-sezon="1">22.08 - 29.08 · 650 zł / doba</option>
+            </select>
+          </div>
+          <div class="pola2">
+            <div class="pole">
+              <label for="k-doby">Liczba dób</label>
+              <input type="number" id="k-doby" min="2" max="21" value="7" inputmode="numeric">
+            </div>
+            <div class="pole">
+              <label for="k-poscie">Komplety pościeli</label>
+              <input type="number" id="k-poscie" min="0" max="8" value="0" inputmode="numeric">
+            </div>
+          </div>
+          <div class="pole">
+            <label for="k-sternik">Dni ze sternikiem</label>
+            <input type="number" id="k-sternik" min="0" max="21" value="0" inputmode="numeric">
+          </div>
+          <label class="chk"><input type="checkbox" id="k-pies"> Płynie z nami pies</label>
+          <p class="uwaga">Ceny wg tabeli jachtów motorowych z marigo.pl/cennik. Terminy od 29.08 - cena do potwierdzenia w biurze.</p>
+        </form>
+        <div class="wycena" aria-live="polite">
+          <table>
+            <tbody id="k-tab"></tbody>
+          </table>
+          <p class="uwaga wazna" id="k-tydz" hidden>W sezonie (12.06 - 1.09) jachty motorowe wynajmujemy tylko na pełne tygodnie, niedziela-niedziela. Wybierz 7 lub 14 dób.</p>
+          <p class="uwaga">Do tego kaucja zwrotna 3000 zł i paliwo (spalanie ok. 3 l/h). Rabaty, np. 10% przy rezerwacji 7 dni do 20.06 lub od 29.08, potwierdza biuro; rabaty nie łączą się.</p>
+          <a class="btn btn-red" href="#kalendarz" style="margin-top:14px">Sprawdź wolne terminy</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sek" id="opis">
+    <div class="wrap dwie">
+      <div>
+        <h2>Dla kogo jest Stillo 30</h2>
+        <p>Stillo 30 to polski jacht motorowy z rocznika 2019, z trzema zamykanymi kabinami dwuosobowymi i przestronną mesą. Dwa stery strumieniowe, dziobowy i rufowy, ułatwiają manewry w porcie. Sprawdza się przy rodzinnych wakacjach, rejsie trzech par i spokojnym zwiedzaniu Mazur bez gonienia kilometrów.</p>
+        <p>Najwygodniej płynie się w 6 osób dorosłych; dwoje dzieci zmieści się dodatkowo, ale przy dłuższym rejsie warto dobrze zaplanować bagaże.</p>
+        <a class="film" href="https://www.youtube.com/watch?v=AgjxUlfJUxc" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Film z wnętrza Stillo 30 na YouTube</a>
+      </div>
+      <table class="tabela">
+        <tbody>
+          <tr><th>2 osoby</th><td>Bardzo komfortowo, dużo przestrzeni</td></tr>
+          <tr><th>4 osoby</th><td>Idealnie na spokojny, wygodny rejs</td></tr>
+          <tr><th>6 osób dorosłych</th><td>Najlepszy pełny układ kabin</td></tr>
+          <tr><th>6 dorosłych + 2 dzieci</th><td>Możliwe, trzeba dobrze zaplanować bagaże</td></tr>
+          <tr><th>8 dorosłych</th><td>Mniej komfortowo przy dłuższym czarterze</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="sek sand" id="wyposazenie">
+    <div class="wrap dwie">
+      <div>
+        <h2>Wyposażenie</h2>
+        <ul class="kolumny">
+          <li>Ogrzewanie Webasto</li>
+          <li>Ciepła woda, bojler 30 l</li>
+          <li>WC morskie elektryczne, prysznic</li>
+          <li>Lodówka elektryczna</li>
+          <li>Kuchenka dwupalnikowa, zlewozmywak</li>
+          <li>Naczynia, zastawa, sztućce</li>
+          <li>Ekspres do kawy</li>
+          <li>Ster strumieniowy dziobowy i rufowy</li>
+          <li>Echosonda, ploter nawigacyjny</li>
+          <li>Radio CD/MP3, TV</li>
+          <li>Gniazda 12 V (4) i 230 V (4)</li>
+          <li>Ładowarka automatyczna, przedłużacz</li>
+          <li>Stolik kokpitowy</li>
+          <li>Nowe materace kokpitowe i dziobowe</li>
+          <li>Nowa tapicerka wewnątrz</li>
+          <li>8 kamizelek ratunkowych i koło</li>
+          <li>2 kotwice z linami po 25 m</li>
+          <li>3 cumy, 6 odbijaczy, bosak</li>
+          <li>Ubezpieczenie jachtu</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Dane techniczne</h2>
+        <table class="tabela">
+          <tbody>
+            <tr><th>Liczba osób</th><td>6+2</td></tr>
+            <tr><th>Koje</th><td>4 podwójne: dziobowa, 2 rufowe zamykane, 1 rozkładana w mesie</td></tr>
+            <tr><th>Długość / szerokość</th><td>9,10 m / 3,25 m</td></tr>
+            <tr><th>Zanurzenie</th><td>0,50 m</td></tr>
+            <tr><th>Masa</th><td>4250 kg</td></tr>
+            <tr><th>Silnik</th><td>stacjonarny diesel 38 KM, ok. 3 l/h</td></tr>
+            <tr><th>Zbiorniki</th><td>woda 210 l, paliwo 150 l, fekalia 60 l</td></tr>
+            <tr><th>Rocznik</th><td>2019</td></tr>
+            <tr><th>Uprawnienia</th><td>bez patentu</td></tr>
+            <tr><th>Wydanie / zdanie</th><td>16:00-20:00 / 8:00-10:00</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="sek" id="inne">
+    <div class="wrap">
+      <div class="sek-head">
+        <h2>Inne jachty motorowe</h2>
+        <p><a href="index.html#flota">Wszystkie jachty Marigo</a></p>
+      </div>
+      <div class="flota">
+        <article class="jacht">
+          <div class="fot"><img src="img/k-nexus-870.webp" alt="Nexus 870 Revo" width="640" height="427" loading="lazy" decoding="async"></div>
+          <div class="opis"><h3>Nexus 870 Revo</h3><p class="typ">Jacht motorowy</p><ul><li>Port Sztynort</li><li>4-6 osób</li><li>Mercury 25 KM</li><li>bez patentu</li></ul><div class="dol"><span class="cena">od <b>500 zł</b> / doba</span><a href="https://marigo.pl/nexus-870/" target="_blank" rel="noopener">Szczegóły</a></div></div>
+        </article>
+        <article class="jacht">
+          <div class="fot"><img src="img/k-futura-36.webp" alt="Futura 36 High Line" width="640" height="427" loading="lazy" decoding="async"></div>
+          <div class="opis"><h3>Futura 36 High Line</h3><p class="typ">Jacht motorowy</p><ul><li>Port Sztynort</li><li>6-8 osób</li><li>diesel 45 KM</li><li>bez patentu*</li></ul><div class="dol"><span class="cena">od <b>850 zł</b> / doba</span><a href="https://marigo.pl/futura-36/" target="_blank" rel="noopener">Szczegóły</a></div></div>
+        </article>
+        <article class="jacht">
+          <div class="fot"><img src="img/k-futura-40.webp" alt="Futura 40 Grand Horizon" width="640" height="427" loading="lazy" decoding="async"></div>
+          <div class="opis"><h3>Futura 40 Grand Horizon</h3><p class="typ">Jacht motorowy</p><ul><li>Port Sztynort</li><li>6-8 osób</li><li>diesel 65 KM</li><li>bez patentu*</li></ul><div class="dol"><span class="cena">od <b>990 zł</b> / doba</span><a href="https://marigo.pl/futura-40/" target="_blank" rel="noopener">Szczegóły</a></div></div>
+        </article>
+      </div>
+      <p class="uwaga">* bez patentu po przedstawieniu referencji z wcześniejszego czarteru jachtem z silnikiem.</p>
+    </div>
+  </section>
+
+  <section class="sek kontakt" id="kontakt">
+    <div class="wrap">
+      <h2>Pytania o Stillo 30?</h2>
+      <dl class="kdane">
+        <div><dt>Telefon</dt><dd><a href="tel:+48691612066">691 612 066</a></dd></div>
+        <div><dt>E-mail</dt><dd><a href="mailto:biuro@marigo.pl">biuro@marigo.pl</a></dd></div>
+        <div><dt>Port i biuro</dt><dd>Sztynort Duży 11<br>11-600 Węgorzewo</dd></div>
+        <div><dt>Godziny</dt><dd>Pon-Niedz 8:00-20:00</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer class="stopka">
+  <div class="wrap">
+    <span>© Marigo Czarter Jachtów · <a href="https://marigo.pl/regulamin-czarteru-wazne/" target="_blank" rel="noopener">Regulamin czarteru</a> · <a href="https://marigo.pl/polityka-prywatnosci/" target="_blank" rel="noopener">Polityka prywatności</a></span>
+    <span>Wizualizacja koncepcyjna: wzorcowa podstrona jachtu. Dane i zdjęcia z marigo.pl.</span>
+  </div>
+</footer>
+
+<div class="mob" id="mob">
+  <a class="btn btn-line" href="tel:+48691612066">Zadzwoń</a>
+  <a class="btn btn-red" href="#kalendarz">Wolne terminy</a>
+</div>
+<script src="app.js" defer></script>
+</body>
+</html>

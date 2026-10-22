@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Czarter jachtów Mazury, port Sztynort - Marigo (wizualizacja)</title>
+<meta name="description" content="Wizualizacja odświeżonej strony Marigo Czarter: jachty żaglowe i motorowe w porcie Sztynort, część bez patentu.">
+<link rel="preload" as="image" href="img/hero-antila-33-m.webp" media="(max-width:760px)">
+<link rel="preload" as="image" href="img/hero-antila-33.webp" media="(min-width:761px)">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Wizualizacja koncepcyjna. Dane, ceny i zdjecia pochodza z marigo.pl (stan 22.10.2026). Ramki "widget" to zaslepki na gotowy kod (Yacht CMS lub inny). -->
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="index.html" aria-label="Marigo Czarter - strona główna"><img src="img/logo-marigo.png" alt="Marigo czarter" width="421" height="150"></a>
+    <nav class="nav" aria-label="Menu główne">
+      <a href="#flota" data-filtr="zagl">Jachty żaglowe</a>
+      <a href="#flota" data-filtr="motor">Jachty motorowe</a>
+      <a href="#flota" data-filtr="bp">Bez patentu</a>
+      <a href="#ceny">Cennik</a>
+      <a href="https://marigo.pl/blog/" target="_blank" rel="noopener">Porady</a>
+      <a href="#o-nas">O nas</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="top-tel" href="tel:+48691612066" aria-label="Zadzwoń: 691 612 066"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>691 612 066</span></a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="panel" aria-label="Otwórz menu"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  <div class="panel" id="panel">
+    <a href="#flota" data-filtr="zagl">Jachty żaglowe</a>
+    <a href="#flota" data-filtr="motor">Jachty motorowe</a>
+    <a href="#flota" data-filtr="bp">Jachty bez patentu</a>
+    <a href="#ceny">Cennik i zasady</a>
+    <a href="https://marigo.pl/blog/" target="_blank" rel="noopener">Porady dla załóg</a>
+    <a href="#o-nas">O nas</a>
+    <a href="#kontakt">Kontakt</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="szukaj">
+    <div class="hero-foto">
+      <picture>
+        <source media="(min-width:761px)" srcset="img/hero-antila-33.webp">
+        <img src="img/hero-antila-33-m.webp" alt="Jacht Antila 33 Marigo pod żaglami na mazurskim jeziorze" width="820" height="623" fetchpriority="high">
+      </picture>
+    </div>
+    <div class="hero-in">
+      <div class="wrap">
+        <h1>Czarter jachtów na Mazurach z portu Sztynort</h1>
+        <p class="lead">Jachty żaglowe i motorowe, w tym jednostki bez patentu. Własna flota, wydanie przy kei nr 4 w Sztynorcie i pomoc serwisu na całym szlaku.</p>
+        <!-- ZASLEPKA: tu wkleic gotowy kod widgetu ogolnej wyszukiwarki jachtow -->
+        <div class="widget" role="note">
+          <strong>Miejsce na widget wyszukiwarki jachtów</strong>
+          <p>Tu wklejany gotowy kod (np. z Yacht CMS): termin, typ jachtu, liczba osób i lista wolnych jednostek.</p>
+        </div>
+        <a class="btn btn-red" href="#flota">Zobacz wszystkie jachty</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sek" id="flota">
+    <div class="wrap">
+      <div class="sek-head">
+        <h2>Nasze jachty</h2>
+        <p>Ceny „od” dotyczą doby poza szczytem sezonu. Pełne stawki dla każdego terminu są na stronie jachtu i w cenniku.</p>
+      </div>
+      <div class="filtry">
+        <div class="typy" role="group" aria-label="Typ jachtu">
+          <button type="button" data-typ="all" aria-pressed="true">Wszystkie</button>
+          <button type="button" data-typ="zagl" aria-pressed="false">Żaglowe</button>
+          <button type="button" data-typ="motor" aria-pressed="false">Motorowe</button>
+          <button type="button" data-typ="bp" aria-pressed="false">Bez patentu</button>
+        </div>
+        <label class="osoby">Załoga
+          <select id="osoby">
+            <option value="0">dowolna</option>
+            <option value="4">4 osoby</option>
+            <option value="6">5-6 osób</option>
+            <option value="8">7-8 osób</option>
+            <option value="9">9 osób</option>
+          </select>
+        </label>
+        <span class="wynik" id="wynik" aria-live="polite">12 jachtów</span>
+      </div>
+      <div class="flota" id="lista">
+      <article class="jacht" data-typ="zagl" data-bp="0" data-os="9">
+        <div class="fot"><img src="img/k-antila-33.webp" alt="Antila 33 - jacht Marigo" width="640" height="427" decoding="async"></div>
+        <div class="opis">
+          <h3>Antila 33</h3>
+          <p class="typ">Jacht żaglowy</p>
+          <ul><li>Port Sztynort</li><li>8-9 osób</li><li>Honda 15 KM</li><li>patent żeglarski</li></ul>
+          <div class="dol"><span class="cena">od <b>600 zł</b> / doba</span><a href="https://marigo.pl/jachty/antila-33-mazury/2017/" target="_blank" rel="noopener">Szczegóły</a></div>
+        </div>
+      </article>
+      <article class="jacht" data-typ="zagl" data-bp="0" data-os="9">
+        <div class="fot"><img src="img/k-tango-33.webp" alt="Tango 33 - jacht Marigo" width="640" height="427" decoding="async"></div>
+        <div class="opis">
+          <h3>Tango 33</h3>
+          <p class="typ">Jacht żaglowy</p>
+          <ul><li>Port Sztynort</li><li>8-9 osób</li><li>Mercury 15 KM, skrętny</li></ul>
+          <div class="dol"><span class="cena">od <b>520 zł</b> / doba</span><a href="https://marigo.pl/tango-33/" target="_blank" rel="noopener">Szczegóły</a></div>
+        </div>
+      </article>
+      <article class="jacht" data-typ="zagl" data-bp="0" data-os="9">
+        <div class="fot"><img src="img/k-antila-33-1.webp" alt="Antila 33.1 NEW - jacht Marigo" width="640" height="427" decoding="async"></div>
+        <div class="opis">
+          <h3>Antila 33.1 NEW</h3>
+          <p class="typ">Jacht żaglowy</p>
+          <ul><li>Port Sztynort</li><li>8-9 osób</li><li>Yamaha 20 KM</li><li>patent żeglarski</li></ul>
+          <div class="dol"><span class="cena">od <b>650 zł</b> / doba</span><a href="https://marigo.pl/jachty/antila-33-mazury/2021/" target="_blank" rel="noopener">Szczegóły</a></div>
+        </div>
+      </article>
+      <article class="jacht" data-typ="zagl" data-bp="0" data-os="8">
+        <div class="fot"><img src="img/k-tes-32.webp" alt="Tes 32 Dreamer - jacht Marigo" width="640" height="427" loading="lazy" decoding="async"></div>
+        <div class="opis">
+          <h3>Tes 32 Dreamer</h3>
+          <p class="typ">Jacht żaglowy</p>
+          <ul><li>Port Sztynort</li><li>6-8 osób</li><li>Mercury 15 KM, skrętny</li><li>patent żeglarski</li></ul>
+          <div class="dol"><span class="cena">od <b>400 zł</b> / doba</span><a href="https://marigo.pl/tes-32-dreamer/" target="_blank" rel="noopener">Szczegóły</a></div>
+        </div>
+      </article>
+      <article class="jacht" data-typ="zagl" data-bp="0" data-os="9">
+        <div class="fot"><img src="img/k-antila-33-3.webp" alt="Antila 33.3 - jacht Marigo" width="640" height="427" loading="lazy" decoding="async"></div>
+        <div class="opis">
+          <h3>Antila 33.3</h3>
+          <p class="typ">Jacht żaglowy</p>
+          <ul><li>Port Sztynort</li><li>8-9 osób</li><li>20 KM</li><li>patent żeglarski</li></ul>
+          <div class="dol"><span class="cena">od <b>700 zł</b> / doba</span><a href="https://marigo.pl/jachty/antila-33-mazury/2024/" target="_blank" rel="noopener">Szczegóły</a></div>
+        </div>
+      </article>
+      <article class="jacht" data-typ="zagl" data-bp="0" data-os="8">
+        <div class="fot"><img src="img/k-maxus-28.webp" alt="Maxus 28 - jacht Marigo" width="640" height="427" loading="lazy" decoding="async"></div>
+        <div class="opis">
+          <h3>Maxus 28</h3>
+          <p class="typ">Jacht żaglowy</p>
+          <ul><li>Port Neptun Giżycko</li><li>6-8 osób</li><li>15 KM</li></ul>
+          <div class="dol"><span class="cena">od <b>400 zł</b> / doba</span><a href="https://marigo.pl/maxus-28/" target="_blank" rel="noopener">Szczegóły</a></div>
+        </div>
+      </article>
+      <article class="jacht" data-typ="motor" data-bp="1" data-os="8">
+        <div class="fot"><img src="img/k-stillo-30.webp" alt="Stillo 30 - jacht Marigo" width="640" height="427" loading="lazy" decoding="async"></div>
+        <div class="opis">
+          <h3>Stillo 30</h3>
+          <p class="typ">Jacht motorowy</p>
+          <ul><li>Port Sztynort</li><li>6+2 osób</li><li>diesel 38 KM</li><li>bez patentu</li></ul>
+          <div class="dol"><span class="cena">od <b>650 zł</b> / doba</span><a href="jacht.html">Zobacz jacht</a></div>
+        </div>
+      </article>
+      <article class="jacht" data-typ="motor" data-bp="1" data-os="8">
+        <div class="fot"><img src="img/k-futura-36.webp" alt="Futura 36 High Line - jacht Marigo" width="640" height="427" loading="lazy" decoding="async"></div>
+        <div class="opis">
+          <h3>Futura 36 High Line</h3>
+          <p class="typ">Jacht motorowy</p>
+          <ul><li>Port Sztynort</li><li>6-8 osób</li><li>diesel 45 KM</li><li>bez patentu*</li></ul>
+          <div class="dol"><span class="cena">od <b>850 zł</b> / doba</span><a href="https://marigo.pl/futura-36/" target="_blank" rel="noopener">Szczegóły</a></div>
+        </div>
+      </article>
+      <article class="jacht" data-typ="motor" data-bp="1" data-os="8">
+        <div class="fot"><img src="img/k-nautika-1000.webp" alt="Nautika 1000 S - jacht Marigo" width="640" height="427" loading="lazy" decoding="async"></div>
+        <div class="opis">
+          <h3>Nautika 1000 S</h3>
+          <p class="typ">Jacht motorowy</p>
+          <ul><li>Port Sztynort</li><li>6-8 osób</li><li>diesel 30 KM</li><li>bez patentu*</li></ul>
+          <div class="dol"><span class="cena">od <b>800 zł</b> / doba</span><a href="https://marigo.pl/nautika-1000/" target="_blank" rel="noopener">Szczegóły</a></div>
+        </div>
+      </article>
+      <article class="jacht" data-typ="motor" data-bp="1" data-os="6">
+        <div class="fot"><img src="img/k-nautika-830.webp" alt="Nautika 830 S - jacht Marigo" width="640" height="427" loading="lazy" decoding="async"></div>
+        <div class="opis">
+          <h3>Nautika 830 S</h3>
+          <p class="typ">Jacht motorowy</p>
+          <ul><li>Port Sztynort</li><li>4-6 osób</li><li>Yamaha 25 KM, Power Trim</li><li>bez patentu</li></ul>
+          <div class="dol"><span class="cena">od <b>450 zł</b> / doba</span><a href="https://marigo.pl/nautika-830/" target="_blank" rel="noopener">Szczegóły</a></div>
+        </div>
+      </article>
+      <article class="jacht" data-typ="motor" data-bp="1" data-os="6">
+        <div class="fot"><img src="img/k-nexus-870.webp" alt="Nexus 870 Revo - jacht Marigo" width="640" height="427" loading="lazy" decoding="async"></div>
+        <div class="opis">
+          <h3>Nexus 870 Revo</h3>
+          <p class="typ">Jacht motorowy</p>
+          <ul><li>Port Sztynort</li><li>4-6 osób</li><li>Mercury 25 KM</li><li>bez patentu</li></ul>
+          <div class="dol"><span class="cena">od <b>500 zł</b> / doba</span><a href="https://marigo.pl/nexus-870/" target="_blank" rel="noopener">Szczegóły</a></div>
+        </div>
+      </article>
+      <article class="jacht" data-typ="motor" data-bp="1" data-os="8">
+        <div class="fot"><img src="img/k-futura-40.webp" alt="Futura 40 Grand Horizon - jacht Marigo" width="640" height="427" loading="lazy" decoding="async"></div>
+        <div class="opis">
+          <h3>Futura 40 Grand Horizon</h3>
+          <p class="typ">Jacht motorowy</p>
+          <ul><li>Port Sztynort</li><li>6-8 osób</li><li>diesel 65 KM</li><li>bez patentu*</li></ul>
+          <div class="dol"><span class="cena">od <b>990 zł</b> / doba</span><a href="https://marigo.pl/futura-40/" target="_blank" rel="noopener">Szczegóły</a></div>
+        </div>
+      </article>
+      </div>
+      <p class="brak" id="brak">Żaden jacht nie pasuje do tych filtrów. Zmień liczbę osób albo zadzwoń: <a href="tel:+48691612066">691 612 066</a>, pomożemy dobrać jednostkę.</p>
+      <p class="uwaga">* Futura 36, Futura 40 i Nautika 1000 bez patentu tylko po przedstawieniu referencji z wcześniejszego czarteru jachtem z silnikiem; w innym wypadku wymagany patent żeglarski lub motorowodny.</p>
+    </div>
+  </section>
+
+  <section class="sek sand" id="w-cenie">
+    <div class="wrap dwie">
+      <div>
+        <h2>Co dostajesz w cenie czarteru</h2>
+        <ul class="lista">
+          <li><b>Ogrzewanie, WC morskie, bimini, szprycbuda i ekspres do kawy</b> - u nas w standardzie, bez dopłat.</li>
+          <li><b>3 doby postoju w Sztynorcie bez opłat.</b> Każdy jacht ma pakiet rezydencki: toalety, prysznice, prąd i woda przy kei.</li>
+          <li><b>Szkolenie z obsługi jachtu</b> przed wypłynięciem. Dłuższe szkolenie można dokupić, głównie przy czarterze bez patentu.</li>
+          <li><b>Serwis na szlaku WJM.</b> W razie kłopotu najpierw pomagamy telefonicznie, a gdy trzeba, dojeżdżamy lub dopływamy na miejsce.</li>
+          <li><b>Wydanie jachtu od 16:00 do 20:00, zdanie do 10:00.</b> Poza sezonem godziny ustalamy pod Twój plan.</li>
+        </ul>
+      </div>
+      <figure class="foto-opis" style="margin:0">
+        <img src="img/marigo-sztynort.webp" alt="Jachty Marigo przy kei w porcie Sztynort" width="1200" height="675" loading="lazy" decoding="async">
+        <figcaption>Jachty Marigo cumują przy kei nr 4 w porcie Sztynort.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sek" id="ceny">
+    <div class="wrap">
+      <div class="sek-head">
+        <h2>Ceny i zasady rezerwacji</h2>
+        <p>Pełne tabele cen dla każdego terminu: <a href="https://marigo.pl/cennik/" target="_blank" rel="noopener">cennik na marigo.pl</a>.</p>
+      </div>
+      <div class="zasady">
+        <div>
+          <h3>Sezon i długość rejsu</h3>
+          <p>Od 12.06 do 1.09 wynajmujemy tylko na pełne tygodnie: jachty żaglowe sobota-sobota, motorowe niedziela-niedziela. Poza sezonem można krócej, z dopłatą za krótki czarter (2 doby +70%, 3 doby +30%, 4 doby +20%).</p>
+        </div>
+        <div>
+          <h3>Rabaty</h3>
+          <ul>
+            <li>10% przy rezerwacji na 7 dni do 20.06 i od 29.08</li>
+            <li>5% dla stałych klientów (min. 3 sezony)</li>
+            <li>5% za poleconego klienta (umowa min. 7 dni)</li>
+            <li>3% przy czarterze na 14 dni</li>
+          </ul>
+          <p>Rabaty nie łączą się ze sobą.</p>
+        </div>
+        <div>
+          <h3>Jak rezerwujesz</h3>
+          <p>Online w kalendarzu pod każdym jachtem albo telefonicznie i mailowo. Przy rezerwacji tradycyjnej wysyłamy umowę w PDF; podpisaną umowę i zadatek przesyłasz w ciągu 4 dni. Na 2-3 dni przed rejsem dzwonimy ze szczegółami odbioru.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sek sand" id="pierwszy-rejs">
+    <div class="wrap dwie">
+      <div>
+        <h2>Pierwszy rejs albo bez patentu</h2>
+        <p>Jeśli płyniesz pierwszy raz, zadzwoń przed rezerwacją. Pomożemy dobrać jacht do liczby osób, doświadczenia i trasy: łatwy w manewrach, z ogrzewaniem i ciepłą wodą, z rozsądną liczbą miejsc do spania. Na początek polecamy krótszą trasę bez długich przelotów.</p>
+        <p>Bez patentu można prowadzić Stillo 30, Nexus 870 Revo i Nautikę 830. Na większe jachty motorowe potrzebne jest doświadczenie potwierdzone referencjami. Jeśli chcesz, dokupisz sternika (400 zł za dzień) albo naukę prowadzenia łodzi motorowej.</p>
+        <a class="btn btn-line" href="https://marigo.pl/czarter-bez-patentu/" target="_blank" rel="noopener">Czarter bez patentu - przepisy</a>
+      </div>
+      <figure class="foto-opis" style="margin:0">
+        <img src="img/k-stillo-30.webp" alt="Jacht motorowy Stillo 30 na jeziorze" width="640" height="427" loading="lazy" decoding="async">
+        <figcaption>Stillo 30 - jacht motorowy bez patentu, 3 zamykane kabiny.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sek" id="o-nas">
+    <div class="wrap">
+      <div style="max-width:760px">
+        <h2>O nas</h2>
+        <p>Pierwszy własny jacht, Tango 780, zwodowaliśmy na jeziorze Ryńskim w kwietniu 2002 roku. Od tamtej pory przez naszą flotę przeszło 16 jachtów, głównie Tes 32 Dreamer, Twister 780, Antila 33 i jednostki motorowe. Firma PHU Marigo Mariusz Siennicki działa od 2007 roku.</p>
+        <p>O jachty dbamy sami: przed każdym czarterem przegląd, uzupełnienie wyposażenia, sprzątanie i dezynfekcja. Pracujemy 7 dni w tygodniu.</p>
+        <p><a href="https://www.facebook.com/MarigoCzarterMazury" target="_blank" rel="noopener">Facebook</a> &nbsp;·&nbsp; <a href="https://www.youtube.com/@marigoCzarter" target="_blank" rel="noopener">Filmy z jachtów na YouTube</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sek kontakt" id="kontakt">
+    <div class="wrap">
+      <h2>Kontakt</h2>
+      <dl class="kdane">
+        <div><dt>Telefon</dt><dd><a href="tel:+48691612066">691 612 066</a></dd></div>
+        <div><dt>E-mail</dt><dd><a href="mailto:biuro@marigo.pl">biuro@marigo.pl</a></dd></div>
+        <div><dt>Port i biuro</dt><dd>Sztynort Duży 11<br>11-600 Węgorzewo</dd></div>
+        <div><dt>Godziny</dt><dd>Pon-Niedz 8:00-20:00</dd></div>
+      </dl>
+      <a class="btn btn-red" href="https://www.google.com/maps/search/?api=1&amp;query=Czarter+Jacht%C3%B3w+Mazury+Marigo+Sztynort" target="_blank" rel="noopener">Dojazd w Google Maps</a>
+    </div>
+  </section>
+</main>
+
+<footer class="stopka">
+  <div class="wrap">
+    <span>© Marigo Czarter Jachtów · <a href="https://marigo.pl/regulamin-czarteru-wazne/" target="_blank" rel="noopener">Regulamin czarteru</a> · <a href="https://marigo.pl/polityka-prywatnosci/" target="_blank" rel="noopener">Polityka prywatności</a></span>
+    <span>Wizualizacja koncepcyjna. Dane i zdjęcia z marigo.pl, ramki widgetów to miejsca na gotowy kod.</span>
+  </div>
+</footer>
+
+<div class="mob" id="mob">
+  <a class="btn btn-line" href="tel:+48691612066">Zadzwoń</a>
+  <a class="btn btn-red" href="#szukaj">Szukaj terminu</a>
+</div>
+<script src="app.js" defer></script>
+</body>
+</html>
